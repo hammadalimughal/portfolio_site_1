@@ -11,7 +11,7 @@ import MyLifeStruggle from './components/MyLifeStruggle';
 import OurServices from './components/OurServices';
 import Portfolio from './components/Portfolio';
 import ExperienceCounter from './components/ExperienceCounter';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
 import AvailableFreelancing from './components/AvailableFreelancing';
 import BlogsHome from './components/BlogsHome';
 import Footer from './components/Footer';
@@ -23,18 +23,18 @@ const App = () => {
   const [name] = React.useState("Hammad Ali")
   return (
     <>
-    <Router>
+      <Router>
         <Header />
         <HomeBanner name={name} />
-          <MyLifeStruggle />
-          <OurServices />
-          <Portfolio />
-          {/* <Testimonials /> */}
-          <AvailableFreelancing />
-          <BlogsHome />
+        <MyLifeStruggle />
+        <OurServices />
+        <Portfolio />
+        {/* <Testimonials /> */}
+        <AvailableFreelancing />
+        <BlogsHome />
         <ExperienceCounter />
         <Footer />
-        </Router>
+      </Router>
     </>
   )
 }
