@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import React from 'react';
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './App.css';
+import './../node_modules/jquery/dist/jquery.min.js';
+import './../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import Header from './components/Header';
+import HomeBanner from './components/HomeBanner';
+import MyLifeStruggle from './components/MyLifeStruggle';
+import OurServices from './components/OurServices';
+import Portfolio from './components/Portfolio';
+import ExperienceCounter from './components/ExperienceCounter';
+import Testimonials from './components/Testimonials';
+import AvailableFreelancing from './components/AvailableFreelancing';
+import BlogsHome from './components/BlogsHome';
+import Footer from './components/Footer';
 
-function App() {
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
+const App = () => {
+  const [name] = React.useState("Hammad Ali")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Router>
+        <Header />
+        <HomeBanner name={name} />
+          <MyLifeStruggle />
+          <OurServices />
+          <Portfolio />
+          {/* <Testimonials /> */}
+          <AvailableFreelancing />
+          <BlogsHome />
+        <ExperienceCounter />
+        <Footer />
+        </Router>
+    </>
+  )
 }
 
-export default App;
+export default App
