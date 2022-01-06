@@ -4,6 +4,7 @@ const router = express.Router();
 
 router.post('/checkuser', async (req,res) => {
     var success = false;
+    try{
     const {email,password} = req.body;
     let user = await User.findOne({email})
     const passwordCompare = (user.password == password)
@@ -17,5 +18,10 @@ router.post('/checkuser', async (req,res) => {
         }
     }
     res.json(data)
+    }
+    catch(error){
+        console.error(error.message);
+        res.status(500).send("Some Error Occured")
+    }
 })
 module.exports = router
