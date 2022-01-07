@@ -29,6 +29,11 @@
       "react-app/jest"
     ]
   },
+  "debug.javascript.terminalOptions": {
+    "skipFiles": [
+      "<node_internals>/**"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",

@@ -5,21 +5,18 @@ const router = express.Router();
 
 router.post('/registeruser', async (req, res) => {
     try {
+        const {name,email,password} = req.body
         let userCheck = await User.findOne({ email })
         if (userCheck) {
             res.status(400).send("Some Error Occured")
         }
-        // if(error){
-        //     console.error(error.message);
-        //     res.status(200).send("Some Error Occured")
-        // }
         console.log("process")
         user = await User.create({
             name: req.body.name,
             email: req.body.email,
             password: req.body.password
         })
-        res.json({ user })
+        res.json(user)
     }
     catch (error) {
         console.error(error.message);
