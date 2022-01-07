@@ -8,6 +8,7 @@ const port =  4500;
 
 app.use('/api/user', require('./auths/RegisterUser'))
 app.use('/api/user', require('./auths/CheckUser'))
+app.use('/api/user', require('./auths/GetUser'))
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
