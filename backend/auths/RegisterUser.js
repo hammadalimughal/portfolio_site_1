@@ -1,10 +1,19 @@
 const express = require('express');
 const User = require('../models/User');
+const { body, validationResult } = require('express-validator');
 const router = express.Router();
 // const { body} = require('express-validator');
 
-router.post('/registeruser', async (req, res) => {
+router.post('/registeruser', [
+    body('name', "Name must contain atleast 3 characters").isLength({ min: 3 }),
+    body('email', "Enter a valid email").isEmail(),
+    body('password', "Password must be atleast 5 characters").isLength({ min: 5 }),
+], async (req, res) => {
     try {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array()[0].msg });
+        }
         const { email } = req.body
         let userCheck = await User.findOne({ email })
         if (userCheck) {
