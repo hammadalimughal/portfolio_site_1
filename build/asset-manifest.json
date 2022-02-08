@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cbc6a34c.chunk.css",
+    "main.js": "/static/js/main.56945994.chunk.js",
+    "main.js.map": "/static/js/main.56945994.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.839d0e35.js",
+    "runtime-main.js.map": "/static/js/runtime-main.839d0e35.js.map",
+    "static/css/2.6d3ca87f.chunk.css": "/static/css/2.6d3ca87f.chunk.css",
+    "static/js/2.8fe8503f.chunk.js": "/static/js/2.8fe8503f.chunk.js",
+    "static/js/2.8fe8503f.chunk.js.map": "/static/js/2.8fe8503f.chunk.js.map",
+    "static/js/3.d3c81cd4.chunk.js": "/static/js/3.d3c81cd4.chunk.js",
+    "static/js/3.d3c81cd4.chunk.js.map": "/static/js/3.d3c81cd4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.6d3ca87f.chunk.css.map": "/static/css/2.6d3ca87f.chunk.css.map",
+    "static/css/main.cbc6a34c.chunk.css.map": "/static/css/main.cbc6a34c.chunk.css.map",
+    "static/js/2.8fe8503f.chunk.js.LICENSE.txt": "/static/js/2.8fe8503f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/counter_bg.379ecfb3.png",
+    "static/media/blog_1.0b30f429.png": "/static/media/blog_1.0b30f429.png",
+    "static/media/blog_2.43f3c340.png": "/static/media/blog_2.43f3c340.png",
+    "static/media/blog_3.9e9a40fa.png": "/static/media/blog_3.9e9a40fa.png",
+    "static/media/my_life_struggle.80255546.png": "/static/media/my_life_struggle.80255546.png",
+    "static/media/portfolio_1.51353669.png": "/static/media/portfolio_1.51353669.png",
+    "static/media/portfolio_2.35584103.png": "/static/media/portfolio_2.35584103.png",
+    "static/media/portfolio_3.757fce90.png": "/static/media/portfolio_3.757fce90.png",
+    "static/media/portfolio_4.9cf90618.png": "/static/media/portfolio_4.9cf90618.png",
+    "static/media/portfolio_5.d2df8b48.png": "/static/media/portfolio_5.d2df8b48.png",
+    "static/media/portfolio_6.2c04446a.png": "/static/media/portfolio_6.2c04446a.png",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/wordpress.7cc1c674.png": "/static/media/wordpress.7cc1c674.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.839d0e35.js",
+    "static/css/2.6d3ca87f.chunk.css",
+    "static/js/2.8fe8503f.chunk.js",
+    "static/css/main.cbc6a34c.chunk.css",
+    "static/js/main.56945994.chunk.js"
+  ]
+}
